@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hengis — Bùi Kiến Quốc</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <h1 class="logo">Hengis</h1>
+      <nav class="nav">
+        <a href="#about">Giới thiệu</a>
+        <a href="#hobbies">Sở thích</a>
+        <a href="#work">Ảnh</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="pixels"></div>
+      <div class="clouds" aria-hidden="true">
+        <div class="cloud c1"></div>
+        <div class="cloud c2"></div>
+      </div>
+
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <p class="eyebrow">Xin chào — mình là</p>
+          <h2 class="hero-title">Bùi Kiến Quốc (<span class="mono">Hengis</span>)</h2>
+          <p class="hero-lead">Tuổi: &lt;16 — Quê ở Đồng Tháp (Tiền Giang cũ). Mình thích chơi game, nghe nhạc, chơi cầu lông và đá bóng. Ước mơ trở thành YouTuber.</p>
+
+          <div class="actions">
+            <a class="btn primary wobble" href="#contact">Gọi mình đi!</a>
+            <a class="btn ghost" href="#hobbies">Xem sở thích</a>
+          </div>
+        </div>
+
+        <figure class="hero-right">
+          <img class="profile pixel" src="./img/IMG_1767510553230_1767510559766.jpg" alt="Ảnh Hengis">
+          <figcaption>Hengis — học sinh, mê game và YouTube</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h3>Giới thiệu chung</h3>
+        <p>Mình tên thật là <strong>Bùi Kiến Quốc</strong> — học sinh, tuổi dưới 16, quê ở Đồng Tháp (Tiền Giang cũ). Thích mọi thứ liên quan tới game, anime và đồ chơi. Ước mơ: làm YouTuber về game và cuộc sống học đường.</p>
+      </div>
+    </section>
+
+    <section id="hobbies" class="section hobbies">
+      <div class="container">
+        <h3>Sở thích</h3>
+
+        <div class="tabs" role="tablist" aria-label="Sở thích">
+          <button class="tab active" role="tab" data-target="anime" aria-selected="true">Anime</button>
+          <button class="tab" role="tab" data-target="games">Game</button>
+          <button class="tab" role="tab" data-target="toys">Đồ chơi</button>
+        </div>
+
+        <div class="tab-panels">
+          <div id="anime" class="panel active" role="tabpanel">
+            <h4>Anime yêu thích</h4>
+            <ul>
+              <li>One Piece</li>
+              <li>Naruto</li>
+              <li>Dan Dan Dan... (và nhiều nữa)</li>
+            </ul>
+                <div class="thumbs">
+                  <img class="clickable" data-full="./img/MV5BZTNjOWI0ZTAtOGY1OS00ZGU0LWEyOWYtMjhkYjdlYmVjMDk2XkEyXkFqcGc@._V1_.jpg" src="./img/MV5BZTNjOWI0ZTAtOGY1OS00ZGU0LWEyOWYtMjhkYjdlYmVjMDk2XkEyXkFqcGc@._V1_.jpg" alt="anime1">
+                  <img class="clickable" data-full="./img/WhatsApp-Image-2024-10-23-at-154224-558246539.webp" src="./img/WhatsApp-Image-2024-10-23-at-154224-558246539.webp" alt="anime2">
+                  <img class="clickable" data-full="./img/ems.jpeg" src="./img/ems.jpeg" alt="anime3">
+
+                </div>
+          </div>
+
+          <div id="games" class="panel" role="tabpanel" hidden>
+            <h4>Game ưa thích</h4>
+            <ul>
+              <li>Free Fire</li>
+              <li>Liên Quân</li>
+              <li>Roblox</li>
+            </ul>
+            <div class="thumbs">
+              <img class="clickable" data-full="./img/hinh-nen-free-fire-3d-34.jpg" src="img/hinh-nen-free-fire-3d-34.jpg" alt="game1">
+              <img class="clickable" data-full="./img/anh-nen-lien-quan-sieu-dep(2).jpg" src="./img/anh-nen-lien-quan-sieu-dep(2).jpg" alt="game1">
+              <img class="clickable" data-full="./img/image4-1024x576.png" src="./img/image4-1024x576.png" alt="game1">
+
+            </div>
+          </div>
+
+          <div id="toys" class="panel" role="tabpanel" hidden>
+            <h4>Đồ chơi yêu thích</h4>
+            <p>Lego là yêu thích nhất — thích xếp và sáng tạo nhân vật nhỏ.</p>
+            <div class="thumbs">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section gallery">
+      <div class="container">
+        <h3>Hình ảnh</h3>
+        <div class="grid">`
+          <img class="clickable" data-full="./img/IMG_1767510553230_1767510559766.jpg" src="./img/IMG_1767510553230_1767510559766.jpg" alt="ảnh 1">          <img class="clickable" data-full="./" src="" alt="ảnh 1">
+          <img class="clickable" data-full="./img/Locket_1767510608781_43.jpg" src="./img/Locket_1767510608781_43.jpg" alt="ảnh 1">
+          <img class="clickable" data-full="./" src="" alt="ảnh 1">
+          <img class="clickable" data-full="./" src="" alt="ảnh 1">
+          <img class="clickable" data-full="./" src="" alt="ảnh 1">
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h3>Liên hệ</h3>
+        <p>Nếu muốn nói chuyện hoặc mời làm video, gửi email cho Hengis (hoặc hỏi bố mẹ nhé).</p>
+        <a class="btn primary" href="mailto:hengis@example.com">Gửi email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 Hengis (Bùi Kiến Quốc) — Đồng Tháp.</div>
+  </footer>
+  
+  <!-- Modal for images -->
+  <div id="imgModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close" aria-label="Đóng">✕</button>
+      <img src="" alt="" class="modal-img">
+      <p class="modal-caption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
